@@ -123,20 +123,26 @@ main {
   padding: 45px 40px;
   border-radius: 8px;
   background: #ff900e;
+  color: #fff;
   width: 342px;
   text-align: center;
+  position: relative;
+  bottom: 100px;
 }
 .ten-years-badge h2 {
-  color: #fff;
   font-size: 65px;
   font-weight: 700;
   margin: 0;
 }
 .ten-years-badge p {
-  color: #fff;
   font-size: 25px;
   font-weight: 500;
   margin: 0;
+}
+.feature-img img{
+    width: 708px;
+    height: 90%;
+    margin-left: 90px;
 }
 /* facts-card-container */
 .facts-card-container {
@@ -195,6 +201,7 @@ footer {
   }
   nav,
   .teams-container,
+  .features,
   .facts-card-container,
   .sponsors-img-container {
     flex-direction: column;
@@ -207,6 +214,14 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .feature-img img{
+    width: 100%;
+    margin-left: 0;
+  }
+  .ten-years-badge{
+    position: static;
+    width: 76%;
+  }
   .facts-card-container {
     gap: 20px;
   }
@@ -218,6 +233,7 @@ footer {
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
   .teams-container,
+  .features,
   .sponsors-img-container {
     flex-direction: column;
   }
